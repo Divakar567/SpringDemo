@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>log4j2-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Log4j2Demo</name>
+	<name>log4j2-demo</name>
 	<description>Demo project for Spring Boot with log4j2 configurations</description>
 
 	<properties>

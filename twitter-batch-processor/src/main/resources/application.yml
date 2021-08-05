@@ -1,0 +1,38 @@
+server:
+  port: 9090
+
+---
+spring:
+  application:
+    name: CONVERSATION_SERVICE
+  data:
+    elasticsearch:
+      client:
+        reactive:
+          endpoints: localhost:9200
+          username:
+          password:
+          connection-timeout: 60000
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:library
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+
+---
+twitter:
+  credentials:
+    apiKey: Zow1G5uVZSKMfZO6EQzRLrSqf
+    apiSecretKey: LDBVvexfxskDyaRjAJddHfjncdcqLyiFNwsNWdwcsWcqi6idoK
+    accessToken: 4810896533-h1COTpfvNOCZxerpFKshlmihCVXrvL9ZYGhjrVG
+    accessTokenSecret: jjn3tPSJigkC8iXMzqslDHx1AuoIsvhfUIWzjZXugDRgx
+    bearerToken: AAAAAAAAAAAAAAAAAAAAAILgSAEAAAAA4i3uV5YHhb3Ex9%2Fos1Cg7CLdCa4%3D0EZ0MRGBqWZ0cupi7kaDMtfDH8j6nhTnqGd3t1cbWvpLzeAI12
+  index:
+    tweets: tweets

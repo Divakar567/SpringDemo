@@ -1,0 +1,29 @@
+{
+  "properties": [
+    {
+      "name": "twitter.credentials.apiSecretKey",
+      "type": "java.lang.String",
+      "description": "Description for twitter.credentials.apiSecretKey."
+    },
+    {
+      "name": "twitter.credentials.apiKey",
+      "type": "java.lang.String",
+      "description": "Description for twitter.credentials.apiKey."
+    },
+    {
+      "name": "twitter.credentials.accessToken",
+      "type": "java.lang.String",
+      "description": "Description for twitter.credentials.accessToken."
+    },
+    {
+      "name": "twitter.credentials.accessTokenSecret",
+      "type": "java.lang.String",
+      "description": "Description for twitter.credentials.accessTokenSecret."
+    },
+    {
+      "name": "twitter.index.tweets",
+      "type": "java.lang.String",
+      "description": "Description for twitter.index.tweets."
+    }
+  ]
+}
