@@ -1,4 +1,4 @@
-package com.example.library.controller;
+package com.example.library.endpoint.controller;
 
 import com.example.library.model.Book;
 import com.example.library.service.BookService;

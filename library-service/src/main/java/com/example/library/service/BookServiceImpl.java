@@ -2,6 +2,7 @@ package com.example.library.service;
 
 import com.example.library.model.Book;
 import com.example.library.repository.BookRepository;
+import com.example.library.util.annotation.Searchable;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -28,12 +29,14 @@ public class BookServiceImpl implements BookService {
         return bookRepository.getBook(id);
     }
 
+    @Searchable(topic = "es-books-topic", index = "books")
     @Transactional
     @Override
     public Book saveBook(Book book) {
         return bookRepository.saveBook(book);
     }
 
+    @Searchable(topic = "es-books-topic", index = "books")
     @Transactional
     @Override
     public Book updateBook(Book book) {
@@ -43,6 +46,7 @@ public class BookServiceImpl implements BookService {
         return bookRepository.updateBook(book);
     }
 
+    @Searchable(topic = "es-books-topic", index = "books")
     @Transactional
     @Override
     public Book deleteBook(String id) {
