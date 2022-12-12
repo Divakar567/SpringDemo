@@ -1,0 +1,8 @@
+<service>
+    <id>spring-cicd-demo</id>
+    <name>SpringCICDDemo</name>
+    <description>Job Service for DFX NextGen UI</description>
+    <executable>java</executable>
+    <arguments>-Xrs -Xmx1024m -jar "job-service-0.0.1-SNAPSHOT.jar"</arguments>
+    <log mode="none"/>
+</service>
